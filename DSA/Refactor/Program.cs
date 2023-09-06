@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 
+
 class Program
 {
     static void Main()
@@ -51,3 +52,47 @@ class Program
         // For example, you can use Directory.GetDirectories() and Directory.GetFiles() to list subdirectories and files.
     }
 }
+
+
+
+
+
+
+
+
+#region TreeDirectory
+/*
+public class TreeNode<T> where T : FileSystemInfo
+{
+    private TreeNode<T>? parentNode = null;
+    private TreeNode<T>[] childrenNode = new TreeNode<T>[0];
+
+    public TreeNode<T>[] Children => childrenNode;
+
+    public bool IsRoot { get { return (parentNode == null); } }
+    public T NodeContent { get; private set; }
+
+    public TreeNode(T nodeContent, TreeNode<T>? parent = null)
+    {
+        this.parentNode = parent;
+        this.NodeContent = nodeContent;
+    }
+    public void AppendChildNode(TreeNode<T> node)
+    {
+        Array.Resize(ref childrenNode, childrenNode.Length + 1);
+        childrenNode[childrenNode.Length - 1] = node;
+    }
+    public override string ToString()
+    {
+        return base.ToString();)
+        {
+            switch(NodeContent)
+            {
+                case DirectoryInfo dir:
+                    return $"Directory:{dir.FullName}, {dir.GetDirectories().Length) subdir and {dir.Directory}"}
+            }
+        }
+    }
+}
+*/
+#endregion
